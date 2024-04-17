@@ -35,7 +35,6 @@ void AGALAGA__USFX_L01GameMode::BeginPlay()
 	//set the game satate to playing
 	FVector ubicaccionInicioNavesEnemigasCaza = FVector(-500.0f, 500.0f, 200.0f);
 	FVector ubicacionInicioNavesEnemigasTransporte = FVector(-500.0f, 500.0f, 200.0f);
-	FVector ubicacionInicioNavesEnemigasTransporte = FVector(1000.0f, 500.0f, 200.0f);
 	
 	/*FVector ubicacionNave01 = FVector(0.0f, 1000.0f, 200.0f);
 	FVector ubicacionNave02 = FVector(0.0f, 700.0f, 200.0f);
@@ -131,7 +130,7 @@ void AGALAGA__USFX_L01GameMode::BeginPlay()
 	NaveEnemigaReabastecimientoG101->SetPosicion(FVector(200.0f, 0.0f, 200.0f));
 	NaveEnemigaReabastecimientoG201->SetPosicion(FVector(600.0f, 250.0f, 200.0f));*/
 
-	TMapPowerUp.Add(3000, "escudo");
+	/*TMapPowerUp.Add(3000, "escudo");
 	TMapPowerUp.Add(200, "doble tiro");
 	TMapPowerUp.Add(1000, "vida extra");
 	TMapPowerUp.Add(1500, "invulnerable");
@@ -142,13 +141,13 @@ void AGALAGA__USFX_L01GameMode::BeginPlay()
 	PowerUpStatusMap.Add(1000, false);
 	PowerUpStatusMap.Add(1500, false);
 	PowerUpStatusMap.Add(500, false);
-	score = 0;
+	score = 0;*/
 }
 
 void AGALAGA__USFX_L01GameMode::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	TiempoTranscurrido++;
+	/*TiempoTranscurrido++;
 	if (TiempoTranscurrido >= 100)
 	{
 		int numeroEnemigo = FMath::RandRange(0, 9);
@@ -180,6 +179,6 @@ void AGALAGA__USFX_L01GameMode::Tick(float DeltaTime)
 				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, StatusMessage);
 			}
 		}
-	}
+	}*/
 }
 

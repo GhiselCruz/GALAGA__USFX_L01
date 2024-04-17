@@ -17,7 +17,7 @@ private:
 	int regenerarResistencia;
 	ANaveEnemigaReabastecimientoG1();
 	FORCEINLINE int GetRegenerarResistencia() const { return regenerarResistencia; }
-	FORCEINLINE int SetRegenerarResistencia(int _regenerarResistencia) { regenerarResistencia = _regenerarResistencia; }
+	FORCEINLINE void SetRegenerarResistencia(int _regenerarResistencia) { regenerarResistencia = _regenerarResistencia; }
 
 protected:
 	virtual void Mover();

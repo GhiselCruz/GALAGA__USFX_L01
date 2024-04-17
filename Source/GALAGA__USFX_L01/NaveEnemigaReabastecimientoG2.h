@@ -17,7 +17,7 @@ private:
 	int duplicarResistencia;
 	ANaveEnemigaReabastecimientoG2();
 	FORCEINLINE int GetDuplicarResistencia() const { return duplicarResistencia; }
-	FORCEINLINE int SetDuplicarResistencia(int _duplicarResistencia) { duplicarResistencia = _duplicarResistencia; }
+	FORCEINLINE void SetDuplicarResistencia(int _duplicarResistencia) { duplicarResistencia = _duplicarResistencia; }
 
 protected:
 	virtual void Mover();

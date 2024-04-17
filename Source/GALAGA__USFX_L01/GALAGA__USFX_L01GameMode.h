@@ -60,28 +60,8 @@ public:
 	TArray<ANaveEnemigaCaza*> TNavesEnemigasCaza;
 	TArray<ANaveEnemigaTransporte*> TNavesEnemigasTransporte;
 
-private:
-	int TiempoTranscurrido;
-
-public:
-	int score;
-	int POWER_UP_DOUBLE_SHOT_ID;
-
 public:
 	virtual void Tick(float DeltaTime) override;
-
-public:
-	FString powerUp;
-	TMap<int, FString>TMapPowerUp;
-
-	FORCEINLINE bool GetPowerUpStatus(int PowerUpID) const
-	{
-		const bool* Status = PowerUpStatusMap.Find(PowerUpID);
-		return(Status != nullptr) ? *Status : false;
-	}
-	
-private:
-	TMap<int, bool> PowerUpStatusMap;
 };
 
 

@@ -17,7 +17,7 @@ private:
 	int cargaDoble;
 	ANaveEnemigaTransporteG2();
 	FORCEINLINE int GetCargaDoble() const { return cargaDoble; }
-	FORCEINLINE int SetCargaDoble(int _cargaDoble) { cargaDoble = _cargaDoble; }
+	FORCEINLINE void SetCargaDoble(int _cargaDoble) { cargaDoble = _cargaDoble; }
 
 protected:
 	virtual void Mover();

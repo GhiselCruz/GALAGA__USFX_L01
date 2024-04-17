@@ -16,9 +16,10 @@ class GALAGA__USFX_L01_API ANaveEnemigaEspiaG2 : public ANaveEnemigaEspia
 
 private:
 	int invisibilidadTemp;
+public:
 	ANaveEnemigaEspiaG2();
 	FORCEINLINE int GetInvisibilidadTemp() const { return invisibilidadTemp; }
-	FORCEINLINE int SetInvisibilidadTemp(int _invisibilidadTemp) { invisibilidadTemp = _invisibilidadTemp; }
+	FORCEINLINE void SetInvisibilidadTemp(int _invisibilidadTemp) { invisibilidadTemp = _invisibilidadTemp; }
 
 protected:
 	virtual void Mover();

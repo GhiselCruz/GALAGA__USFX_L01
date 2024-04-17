@@ -17,7 +17,7 @@ private:
 	int resistenciax6;
 	ANaveEnemigaNodrizaG2();
 	FORCEINLINE int GettripleResistenciax6() const { return resistenciax6; }
-	FORCEINLINE int SetInvisibilidadTemp(int _resistenciax6) { resistenciax6 = _resistenciax6; }
+	FORCEINLINE void SetInvisibilidadTemp(int _resistenciax6) { resistenciax6 = _resistenciax6; }
 
 protected:
 	virtual void Mover();

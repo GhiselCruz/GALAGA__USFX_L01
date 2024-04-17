@@ -17,7 +17,7 @@ private:
 	int resistenciaCuadruple;
 	ANaveEnemigaNodrizaG1();
 	FORCEINLINE int GettripleResistenciaCuadruple() const { return resistenciaCuadruple; }
-	FORCEINLINE int SetInvisivilidadTemp(int _resistenciaCuadruple) { resistenciaCuadruple = _resistenciaCuadruple; }
+	FORCEINLINE void SetInvisivilidadTemp(int _resistenciaCuadruple) { resistenciaCuadruple = _resistenciaCuadruple; }
 
 protected:
 	virtual void Mover();

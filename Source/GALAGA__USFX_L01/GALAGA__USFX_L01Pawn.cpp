@@ -174,7 +174,7 @@ void AGALAGA__USFX_L01Pawn::Tick(float DeltaSeconds)
 		AGALAGA__USFX_L01GameMode* GameMode = Cast<AGALAGA__USFX_L01GameMode>(GetWorld()->GetAuthGameMode());
 		if (GameMode != nullptr)
 		{
-			masVelocidad = GameMode->GetPowerUpStatus(500);
+			//masVelocidad = GameMode->GetPowerUpStatus(500);
 		}
 	}
 
@@ -232,7 +232,7 @@ void AGALAGA__USFX_L01Pawn::FireShot(FVector FireDirection)
 				AGALAGA__USFX_L01GameMode* GameMode = Cast<AGALAGA__USFX_L01GameMode>(GetWorld()->GetAuthGameMode());
 				if (GameMode != nullptr)
 				{
-					disparodoble = GameMode->GetPowerUpStatus(200);
+					//disparodoble = GameMode->GetPowerUpStatus(200);
 				}
 			}
 
@@ -244,7 +244,6 @@ void AGALAGA__USFX_L01Pawn::FireShot(FVector FireDirection)
 					World->SpawnActor<AGALAGA__USFX_L01Projectile>(SpawnLocation2, FireRotation);
 				}
 			}
-_
 			bCanFire = false;
 			World->GetTimerManager().SetTimer(TimerHandle_ShotTimerExpired, this, &AGALAGA__USFX_L01Pawn::ShotTimerExpired, FireRate);
 
