@@ -14,8 +14,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define GALAGA__USFX_L01_MySceneComponentBarrera_generated_h
 
 #define GALAGA__USFX_L01_Source_GALAGA__USFX_L01_MySceneComponentBarrera_h_13_SPARSE_DATA
-#define GALAGA__USFX_L01_Source_GALAGA__USFX_L01_MySceneComponentBarrera_h_13_RPC_WRAPPERS
-#define GALAGA__USFX_L01_Source_GALAGA__USFX_L01_MySceneComponentBarrera_h_13_RPC_WRAPPERS_NO_PURE_DECLS
+#define GALAGA__USFX_L01_Source_GALAGA__USFX_L01_MySceneComponentBarrera_h_13_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execCrearBarrera);
+
+
+#define GALAGA__USFX_L01_Source_GALAGA__USFX_L01_MySceneComponentBarrera_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execCrearBarrera);
+
+
 #define GALAGA__USFX_L01_Source_GALAGA__USFX_L01_MySceneComponentBarrera_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMySceneComponentBarrera(); \

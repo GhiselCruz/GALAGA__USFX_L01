@@ -20,8 +20,43 @@ void EmptyLinkFunctionForGeneratedCodeMySceneComponentBarrera() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(UMySceneComponentBarrera::execCrearBarrera)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->CrearBarrera();
+		P_NATIVE_END;
+	}
 	void UMySceneComponentBarrera::StaticRegisterNativesUMySceneComponentBarrera()
 	{
+		UClass* Class = UMySceneComponentBarrera::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "CrearBarrera", &UMySceneComponentBarrera::execCrearBarrera },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UMySceneComponentBarrera_CrearBarrera_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UMySceneComponentBarrera_CrearBarrera_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Barrera" },
+		{ "ModuleRelativePath", "MySceneComponentBarrera.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UMySceneComponentBarrera_CrearBarrera_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMySceneComponentBarrera, nullptr, "CrearBarrera", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMySceneComponentBarrera_CrearBarrera_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UMySceneComponentBarrera_CrearBarrera_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UMySceneComponentBarrera_CrearBarrera()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UMySceneComponentBarrera_CrearBarrera_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_UMySceneComponentBarrera_NoRegister()
 	{
@@ -30,6 +65,7 @@ void EmptyLinkFunctionForGeneratedCodeMySceneComponentBarrera() {}
 	struct Z_Construct_UClass_UMySceneComponentBarrera_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -44,6 +80,9 @@ void EmptyLinkFunctionForGeneratedCodeMySceneComponentBarrera() {}
 	UObject* (*const Z_Construct_UClass_UMySceneComponentBarrera_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_USceneComponent,
 		(UObject* (*)())Z_Construct_UPackage__Script_GALAGA__USFX_L01,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_UMySceneComponentBarrera_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UMySceneComponentBarrera_CrearBarrera, "CrearBarrera" }, // 2527824059
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMySceneComponentBarrera_Statics::Class_MetaDataParams[] = {
@@ -72,11 +111,11 @@ void EmptyLinkFunctionForGeneratedCodeMySceneComponentBarrera() {}
 		"Engine",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_UMySceneComponentBarrera_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_UMySceneComponentBarrera_Statics::PropPointers),
 		0,
 		0x00B000A4u,
@@ -91,7 +130,7 @@ void EmptyLinkFunctionForGeneratedCodeMySceneComponentBarrera() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UMySceneComponentBarrera, 2645701445);
+	IMPLEMENT_CLASS(UMySceneComponentBarrera, 149064510);
 	template<> GALAGA__USFX_L01_API UClass* StaticClass<UMySceneComponentBarrera>()
 	{
 		return UMySceneComponentBarrera::StaticClass();

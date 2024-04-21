@@ -42,7 +42,7 @@ public:
 	UPROPERTY(Category = Audio, EditAnywhere, BlueprintReadWrite)
 	class USoundBase* FireSound;
 
-	void CrearBarrera();
+	//void CrearBarrera();
 	//void SpawnBarrera();
 
 	UPROPERTY(VisibleAnywhere)
@@ -50,14 +50,18 @@ public:
 
 protected:
 
-	FTimerHandle TimerHandle_CrearBarreraProt;
+	FTimerHandle TimerHandle_CrearBarrera;
 	FTimerHandle BarreraTimerHandle;
 	FTimerHandle DestruirBarrera;
 
 	// Begin Actor Interface
 	virtual void Tick(float DeltaSeconds) override;
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
+	virtual void CrearBarrera();
+	//virtual void ResetCrearBarrera();
 	// End Actor Interface
+
+
 
 	/* Fire a shot in the specified direction */
 	void FireShot(FVector FireDirection);
@@ -78,6 +82,7 @@ private:
 
 	/** Handle for efficient management of ShotTimerExpired timer */
 	FTimerHandle TimerHandle_ShotTimerExpired;
+	bool bCrearBarre;
 
 public:
 	/** Returns ShipMeshComponent subobject **/

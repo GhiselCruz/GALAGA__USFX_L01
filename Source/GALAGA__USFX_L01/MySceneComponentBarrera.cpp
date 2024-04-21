@@ -12,6 +12,10 @@ UMySceneComponentBarrera::UMySceneComponentBarrera()
 
 	// ...
 
+}
+
+void UMySceneComponentBarrera::CrearBarrera()
+{
 	UWorld* TheWorld = GetWorld();
 	if (TheWorld != nullptr)
 	{

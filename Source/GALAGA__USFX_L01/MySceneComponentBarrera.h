@@ -17,6 +17,9 @@ public:
 	// Sets default values for this component's properties
 	UMySceneComponentBarrera();
 
+	UFUNCTION(BlueprintCallable, Category = "Barrera")
+	void CrearBarrera();
+
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<AActor>BarreraToSpawn;
 

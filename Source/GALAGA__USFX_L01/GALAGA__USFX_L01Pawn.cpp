@@ -13,9 +13,9 @@
 #include "Kismet/GameplayStatics.h"
 #include "Sound/SoundBase.h"
 #include "Galaga__USFX_L01GameMode.h"
-//#include "MySceneComponentBarrera.h"
+#include "MySceneComponentBarrera.h"
 #include "Components/SceneComponent.h"
-//#include "Barrera.h"
+#include "Barrera.h"
 
 
 const FName AGALAGA__USFX_L01Pawn::MoveForwardBinding("MoveForward");
@@ -59,6 +59,8 @@ AGALAGA__USFX_L01Pawn::AGALAGA__USFX_L01Pawn()
 
 
 	PrimaryActorTick.bCanEverTick = true;
+	bCrearBarre = true;
+
 
 	// Crear el componente de malla estática
 	//SceneComponentBarrera = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("SceneComponentBarrera"));
@@ -74,7 +76,7 @@ AGALAGA__USFX_L01Pawn::AGALAGA__USFX_L01Pawn()
 void AGALAGA__USFX_L01Pawn::BeginPlay()
 {
 	Super::BeginPlay();
-	GetWorld()->GetTimerManager().SetTimer(TimerHandle_CrearBarreraProt, this, &AGALAGA__USFX_L01Pawn::CrearBarrera, 15.0f, true);
+	GetWorld()->GetTimerManager().SetTimer(TimerHandle_CrearBarrera, this, &AGALAGA__USFX_L01Pawn::CrearBarrera, 15.0f, true);
 
 	//PosicionInicio = GetActorLocation();
 	//PosicionInicioX = GetActorLocation().X;
@@ -83,10 +85,14 @@ void AGALAGA__USFX_L01Pawn::BeginPlay()
 
 void AGALAGA__USFX_L01Pawn::CrearBarrera()
 {
+	/*if (!bCrearBarre)
+	{
+		return;
+	}*/
 	FVector Location = GetActorLocation() + FVector(100.0f, 0.0f, 0.0f);
 	FRotator Rotation = GetActorRotation();
 
-/*	USceneComponentBarrera* CrearBarreraComponent = GetWorld()->SpawnActor<USceneComponentBarrera>(USceneComponentBarrera::StaticClass(), Location, Rotation);
+    UMySceneComponentBarrera* CrearBarreraComponent = GetWorld()->SpawnActor<UMySceneComponentBarrera>(UMySceneComponentBarrera::StaticClass(), Location, Rotation);
 	if (CrearBarreraComponent != nullptr)
 	{
 		CrearBarreraComponent->SetWorldLocation(Location);
@@ -110,8 +116,16 @@ void AGALAGA__USFX_L01Pawn::CrearBarrera()
 
 		// Destruccion del actor despues de 5 segundos de aparecer
 		GetWorld()->GetTimerManager().SetTimer(DestruirBarrera, TimerDel, 5.0f, false);
-	}*/
+	}
+	//bCrearBarre = false;
+	//GetWorld()->GetTimerManager().SetTimer(TimerHandle_CrearBarrera, this, &AGALAGA__USFX_L01Pawn::ResetCrearBarrera, 5.0f, false );
 }
+
+/*void AGALAGA__USFX_L01Pawn::ResetCrearBarrera()
+{
+	bCrearBarre = true;
+}*/
+
 
 //void AGALAGA__USFX_L01Pawn::SpawnBarrera()
 //{
