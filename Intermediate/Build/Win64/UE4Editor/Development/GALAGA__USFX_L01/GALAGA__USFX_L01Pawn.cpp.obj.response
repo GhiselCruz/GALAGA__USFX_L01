@@ -262,8 +262,11 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
+/FI"C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\GALAGA__USFX_L01Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\GALAGA__USFX_L01Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\GALAGA__USFX_L01Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
 "C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Source\GALAGA__USFX_L01\GALAGA__USFX_L01Pawn.cpp"
-/FI"C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\UE4Editor\Development\GALAGA__USFX_L01\Definitions.h"
+/FI"C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\UE4Editor\Development\GALAGA__USFX_L01\Definitions.GALAGA__USFX_L01.h"
 /Fo"C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\UE4Editor\Development\GALAGA__USFX_L01\GALAGA__USFX_L01Pawn.cpp.obj"
 /TP
 /GR-

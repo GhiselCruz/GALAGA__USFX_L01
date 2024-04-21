@@ -76,7 +76,7 @@ AGALAGA__USFX_L01Pawn::AGALAGA__USFX_L01Pawn()
 void AGALAGA__USFX_L01Pawn::BeginPlay()
 {
 	Super::BeginPlay();
-	GetWorld()->GetTimerManager().SetTimer(TimerHandle_CrearBarrera, this, &AGALAGA__USFX_L01Pawn::CrearBarrera, 15.0f, true);
+	GetWorld()->GetTimerManager().SetTimer(TimerHandle_CrearBarrera, this, &AGALAGA__USFX_L01Pawn::CrearBarrera, 10.0f, true);
 
 	//PosicionInicio = GetActorLocation();
 	//PosicionInicioX = GetActorLocation().X;

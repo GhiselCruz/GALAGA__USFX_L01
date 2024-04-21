@@ -7,6 +7,7 @@
 /IGNORE:4221
 /NODEFAULTLIB
 "C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\GALAGA__USFX_L01Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\UE4Editor\Development\GALAGA__USFX_L01\Barrera.cpp.obj"
 "C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\UE4Editor\Development\GALAGA__USFX_L01\GALAGA__USFX_L01.cpp.obj"
 "C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\UE4Editor\Development\GALAGA__USFX_L01\GALAGA__USFX_L01GameMode.cpp.obj"
 "C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\UE4Editor\Development\GALAGA__USFX_L01\GALAGA__USFX_L01Pawn.cpp.obj"
@@ -28,6 +29,7 @@
 "C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\UE4Editor\Development\GALAGA__USFX_L01\NaveEnemigaTransporte.cpp.obj"
 "C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\UE4Editor\Development\GALAGA__USFX_L01\NaveEnemigaTransporteG1.cpp.obj"
 "C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\UE4Editor\Development\GALAGA__USFX_L01\NaveEnemigaTransporteG2.cpp.obj"
+"C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\UE4Editor\Development\GALAGA__USFX_L01\Barrera.gen.cpp.obj"
 "C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\UE4Editor\Development\GALAGA__USFX_L01\GALAGA__USFX_L01.init.gen.cpp.obj"
 "C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\UE4Editor\Development\GALAGA__USFX_L01\GALAGA__USFX_L01GameMode.gen.cpp.obj"
 "C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\UE4Editor\Development\GALAGA__USFX_L01\GALAGA__USFX_L01Pawn.gen.cpp.obj"
