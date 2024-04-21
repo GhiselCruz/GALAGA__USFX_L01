@@ -5,7 +5,7 @@
 
 ANaveEnemigaNodriza::ANaveEnemigaNodriza()
 {
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cube.Shape_Cube'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_QuadPyramid.Shape_QuadPyramid'"));
 
 	mallaNaveEnemiga->SetStaticMesh(ShipMesh.Object);
 }

@@ -5,7 +5,7 @@
 
 ANaveEnemigaTransporteG1::ANaveEnemigaTransporteG1()
 {
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_WideCapsule.Shape_WideCapsule'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Wedge_B.Shape_Wedge_B'"));
 
 	mallaNaveEnemiga->SetStaticMesh(ShipMesh.Object);
 

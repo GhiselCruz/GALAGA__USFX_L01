@@ -13,7 +13,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "Sound/SoundBase.h"
 #include "Galaga__USFX_L01GameMode.h"
-//#include "SceneComponentBarrera.h"
+//#include "MySceneComponentBarrera.h"
 #include "Components/SceneComponent.h"
 //#include "Barrera.h"
 
@@ -75,8 +75,10 @@ void AGALAGA__USFX_L01Pawn::BeginPlay()
 {
 	Super::BeginPlay();
 	GetWorld()->GetTimerManager().SetTimer(TimerHandle_CrearBarreraProt, this, &AGALAGA__USFX_L01Pawn::CrearBarrera, 15.0f, true);
-	//	
-	//	GetWorld()->GetTimerManager().SetTimer(BarreraTimerHandle, this, &AGalaga_USFX_L01Pawn::SpawnBarrera, 15.0f, true);
+
+	//PosicionInicio = GetActorLocation();
+	//PosicionInicioX = GetActorLocation().X;
+	//PosicionInicioY = GetActorLocation().Y;
 }
 
 void AGALAGA__USFX_L01Pawn::CrearBarrera()
