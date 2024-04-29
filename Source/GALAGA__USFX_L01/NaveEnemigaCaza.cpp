@@ -20,14 +20,16 @@ void ANaveEnemigaCaza::Mover(float DeltaTime)
 	static float Reaparicion = PosicionActual.X + 200.0f;
 	static float MovimientoY = 0.0f;
 
-	FVector Desplazamiento = FVector(-50.0f * DeltaTime, MovimientoY * DeltaTime, FMath::RandRange(-500.0f, 500.0f) * DeltaTime);
+	//FVector Desplazamiento = FVector(-100.0f * DeltaTime, MovimientoY * DeltaTime, FMath::RandRange(-500.0f, 500.0f) * DeltaTime);
 
-	FVector ReaparicionPosicion = GetActorLocation() + Desplazamiento;
+	//FVector Desplazamiento = FVector(-100.0f * DeltaTime, MovimientoY * DeltaTime,0.0f);
+
+	/*FVector ReaparicionPosicion = GetActorLocation() + Desplazamiento;
 	if (ReaparicionPosicion.X < TopeAbajo)
 	{
 		ReaparicionPosicion.X = Reaparicion;
 	}
-	SetActorLocation(ReaparicionPosicion);
+	SetActorLocation(ReaparicionPosicion);*/
 }
 
 

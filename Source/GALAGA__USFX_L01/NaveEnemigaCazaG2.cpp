@@ -5,7 +5,7 @@
 
 ANaveEnemigaCazaG2::ANaveEnemigaCazaG2()
 {
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_NarrowCapsule.Shape_NarrowCapsule'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cube.Shape_Cube'"));
 
 	mallaNaveEnemiga->SetStaticMesh(ShipMesh.Object);
 }

@@ -15,7 +15,7 @@ class GALAGA__USFX_L01_API ANaveEnemigaCazaG1 : public ANaveEnemigaCaza
 	GENERATED_BODY()
 private:
 	int danoEspecial;
-	
+
 public:
 	ANaveEnemigaCazaG1();
 	FORCEINLINE int GetDanoEspecial() const { return danoEspecial; }

@@ -3,5 +3,7 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UOb
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
 C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Source\GALAGA__USFX_L01/NaveEnemigaEspia.h
 C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Source\GALAGA__USFX_L01\NaveEnemiga.h
+C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Source\GALAGA__USFX_L01\MyActorComponentMovimiento.h
+C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA__USFX_L01\MyActorComponentMovimiento.generated.h
 C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA__USFX_L01\NaveEnemiga.generated.h
 C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA__USFX_L01\NaveEnemigaEspia.generated.h

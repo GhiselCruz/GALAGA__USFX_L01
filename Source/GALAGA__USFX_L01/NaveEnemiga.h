@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "MyActorComponentMovimiento.h"
 #include "NaveEnemiga.generated.h"
 
 UCLASS(abstract)
@@ -60,16 +61,20 @@ public:
 
 
 
-public:	
+public:
 	// Sets default values for this actor's properties
 	ANaveEnemiga();
+	//UMyActorComponentMovimiento* Componente;
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UPROPERTY(VisibleAnywhere)
+    UMyActorComponentMovimiento* ComponenteMovimiento;
 };

@@ -6,8 +6,9 @@
 // Sets default values
 ANaveEnemiga::ANaveEnemiga()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+	ComponenteMovimiento = CreateDefaultSubobject<UMyActorComponentMovimiento>(TEXT("MyActorComponentMovimiento"));
 
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cone.Shape_Cone'"));
 	//Create the mesh component
@@ -15,6 +16,7 @@ ANaveEnemiga::ANaveEnemiga()
 	mallaNaveEnemiga->SetStaticMesh(ShipMesh.Object);
 	mallaNaveEnemiga->SetupAttachment(RootComponent);
 	RootComponent = mallaNaveEnemiga;
+	velocidad = 500.0f;
 
 }
 
