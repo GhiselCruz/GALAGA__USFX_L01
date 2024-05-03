@@ -18,6 +18,9 @@
 #include "NaveEnemigaTransporte.h"
 #include "NaveEnemigaTransporteG1.h"
 #include "NaveEnemigaTransporteG2.h"
+#include "InterfaceBuilderNodriza.h"
+#include "NodrizaActorBuilder.h"
+#include "InfernoNodriza.h"
 
 
 
@@ -37,8 +40,8 @@ void AGALAGA__USFX_L01GameMode::BeginPlay()
 	FRotator rotacionNave = FRotator(0.0f, 0.0f, 0.0f);
 
 	UWorld* const World = GetWorld();
-	int a = 100;  //posicion en x
-	int b = -100;   //posicion en y
+	int a = 500;  //posicion en x
+	int b = 300;   //posicion en y
 	int c = 0;  //contador
 
 	if (World != nullptr)
@@ -46,7 +49,7 @@ void AGALAGA__USFX_L01GameMode::BeginPlay()
 		TArray<TSubclassOf<ANaveEnemiga>> claseNave = { ANaveEnemigaCazaG1::StaticClass(), ANaveEnemigaEspiaG1::StaticClass(),
 		ANaveEnemigaNodrizaG1::StaticClass(),ANaveEnemigaReabastecimientoG1::StaticClass(), ANaveEnemigaTransporteG1::StaticClass() };
 
-		FVector InicialSpawnLocation = FVector(100.f, -500.f, 100.0f);
+		FVector InicialSpawnLocation = FVector(0.0f, 0.0f, 150.0f);
 
 		for (int i = 0; i < 15; i++)
 		{
@@ -61,28 +64,29 @@ void AGALAGA__USFX_L01GameMode::BeginPlay()
 			if (c==5)
 			{
 				a = a + 200;
-				b = -100;
+				b = 300;
 				c = 0;
 			}
 		}
 
-		/*int d = 100;  //posicion en x
+
+		int d = 500;  //posicion en x
 		int e = -100;   //posicion en y
 		int f = 0;  //contador
 		TArray<TSubclassOf<ANaveEnemiga>> claseNaves = { ANaveEnemigaCazaG2::StaticClass(), ANaveEnemigaEspiaG2::StaticClass(),
 		ANaveEnemigaNodrizaG2::StaticClass(),ANaveEnemigaReabastecimientoG2::StaticClass(), ANaveEnemigaTransporteG2::StaticClass() };
 
-		FVector InicialSpawnLocation2 = FVector(100.f, -500.f, 100.0f);
+		FVector InicialSpawnLocation2 = FVector(0.f, -0.f, 150.0f);
 
 		for (int j = 0; j < 15; j++)
 		{
 			TSubclassOf<ANaveEnemiga> ClaseRandom1 = claseNaves[FMath::RandRange(0, claseNaves.Num() - 1)];
 
-			FVector SpawnLocation = InicialSpawnLocation + FVector(d, -e, 0.f);
+			FVector SpawnLocation = InicialSpawnLocation + FVector(d, e, 0.f);
 
 			FRotator SpawnRotation = FRotator::ZeroRotator;
 			ANaveEnemiga* NuevasNavesSpawn = GetWorld()->SpawnActor<ANaveEnemiga>(ClaseRandom1, SpawnLocation, SpawnRotation);
-			e = e + 200;
+			e = e - 200;
 			f = f + 1;
 			if (f == 5)
 			{
@@ -90,8 +94,15 @@ void AGALAGA__USFX_L01GameMode::BeginPlay()
 				e = -100;
 				f = 0;
 			}
-		}*/
+		}
 	}
+
+
+
+	//Aplicacion del patron builder
+	director = GetWorld()->SpawnActor<ADirectorNaveNodriza>();
+	IInterfaceBuilderNodriza* inferno =  GetWorld()->SpawnActor<AInfernoNodriza>();
+	ANodrizaActorBuilder* nodrizaActor = director->SetNodrizaActorBuilder(inferno);
 }
 
 

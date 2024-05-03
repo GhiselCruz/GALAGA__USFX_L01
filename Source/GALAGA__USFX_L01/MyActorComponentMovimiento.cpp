@@ -12,7 +12,10 @@ UMyActorComponentMovimiento::UMyActorComponentMovimiento()
 
 	// ...
 
-	Movimiento = 7.0f;
+	Movimiento = 500;
+	movimiento = 500;
+	MovimientoDerecha = true;
+	MovimientoIzquierda = true;
 }
 
 
@@ -34,33 +37,70 @@ void UMyActorComponentMovimiento::TickComponent(float DeltaTime, ELevelTick Tick
 	// ...
 
 	AActor* Parent = GetOwner();
-	if (Parent)
+
+    if (Parent)
 	{
-		//nueva posicion
-
-		auto NuevaPosicion = Parent->GetActorLocation() + FVector(MovimientoDerecha ? Movimiento : -Movimiento, MovimientoIzquierda ? Movimiento : -Movimiento, 0.0f);
-		Parent->SetActorLocation(NuevaPosicion);
-
-
-		if (MovimientoDerecha && GetOwner()->GetActorLocation().X >= 1000.0f)
+		if (Parent->GetActorLocation().Y > 0)
 		{
-			MovimientoDerecha = false;
+			//nueva posicion
+			auto NuevaPosicion = Parent->GetActorLocation() + FVector(MovimientoDerecha ? movimiento : -movimiento, MovimientoIzquierda ? Movimiento : -Movimiento, 0.0f) * DeltaTime;
+			//auto NuevaPosicion = Parent->GetActorLocation() + FVector(MovimientoDerecha ? Movimiento : -Movimiento, MovimientoIzquierda ? Movimiento : -Movimiento, 0.0f);
+			Parent->SetActorLocation(NuevaPosicion);
+
+
+			if (MovimientoDerecha && GetOwner()->GetActorLocation().X >= 1000.0f)
+			{
+				MovimientoDerecha = false;
+			}
+			else if (!MovimientoDerecha && GetOwner()->GetActorLocation().X <= 500.0f)
+			{
+				MovimientoDerecha = true;
+			}
+
+			if (MovimientoIzquierda && GetOwner()->GetActorLocation().Y >= 1700.0f)
+			{
+				MovimientoIzquierda = false;
+			}
+			else if (!MovimientoIzquierda && GetOwner()->GetActorLocation().Y <= 200.0f)
+			{
+				MovimientoIzquierda = true;
+			}
+			Parent->SetActorLocation(NuevaPosicion);
 		}
-		else if (!MovimientoDerecha && GetOwner()->GetActorLocation().X <= 500.0f)
+		else if (Parent->GetActorLocation().Y < 0)
 		{
-			MovimientoDerecha = true;
-		}
+			//nueva posicion
+			auto NuevaPosicion2 = Parent->GetActorLocation() + FVector(MovimientoDerecha ? movimiento : -movimiento, MovimientoIzquierda ? -Movimiento : Movimiento, 0.0f) * DeltaTime;
+			//auto NuevaPosicion = Parent->GetActorLocation() + FVector(MovimientoDerecha ? Movimiento : -Movimiento, MovimientoIzquierda ? Movimiento : -Movimiento, 0.0f);
+			Parent->SetActorLocation(NuevaPosicion2);
 
-		if (MovimientoIzquierda && GetOwner()->GetActorLocation().Y >= 1700.0f)
-		{
-			MovimientoIzquierda = false;
-		}
-		else if (!MovimientoIzquierda && GetOwner()->GetActorLocation().Y <= 100.0f)
-		{
-			MovimientoIzquierda = true;
+
+			if (MovimientoDerecha && GetOwner()->GetActorLocation().X >= 1000.0f)
+			{
+				MovimientoDerecha = false;
+			}
+			else if (!MovimientoDerecha && GetOwner()->GetActorLocation().X <= 500.0f)
+			{
+				MovimientoDerecha = true;
+			}
+
+			if (MovimientoIzquierda && GetOwner()->GetActorLocation().Y <= -1700.0f)
+			{
+				MovimientoIzquierda = false;
+			}
+			else if (!MovimientoIzquierda && GetOwner()->GetActorLocation().Y >= -200.0f)
+			{
+				MovimientoIzquierda = true;
+			}
+			Parent->SetActorLocation(NuevaPosicion2);
 		}
 	}
 }
+
+
+
+
+
 	/*else if (Parent<0)
 	{
 		auto NuevaPosicion2 = Parent->GetActorLocation() + FVector(MovimientoDerecha ? Movimiento : -Movimiento, MovimientoIzquierda ? Movimiento : -Movimiento, 0.0f);

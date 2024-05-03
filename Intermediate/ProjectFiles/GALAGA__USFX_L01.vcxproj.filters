@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\GALAGA__USFX_L01.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{399AC513-26A6-47D8-94B3-07074D94DAB3}</UniqueIdentifier>
+      <UniqueIdentifier>{8E6822FF-372F-4430-9E8F-B9AE23D45D18}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\GALAGA__USFX_L01.Target.cs">
       <Filter>Source</Filter>
@@ -15,7 +15,7 @@
     <None Include="..\..\.gitignore" />
     <None Include="..\..\Source.zip" />
     <Filter Include="Config">
-      <UniqueIdentifier>{A90CFA50-4247-4274-89BD-BE0BB7A73EA5}</UniqueIdentifier>
+      <UniqueIdentifier>{A4A819C7-1439-43F0-A9DB-B819CC8773CA}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -33,7 +33,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\GALAGA__USFX_L01">
-      <UniqueIdentifier>{0ADD42B5-B3BD-4F01-A215-8172D4392D53}</UniqueIdentifier>
+      <UniqueIdentifier>{88EA9A55-28FF-4CF2-BA30-67F7ACF7A8EB}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\GALAGA__USFX_L01\Barrera.cpp">
       <Filter>Source\GALAGA__USFX_L01</Filter>
@@ -41,16 +41,10 @@
     <ClInclude Include="..\..\Source\GALAGA__USFX_L01\Barrera.h">
       <Filter>Source\GALAGA__USFX_L01</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\GALAGA__USFX_L01\EnemyShip.cpp">
+    <ClCompile Include="..\..\Source\GALAGA__USFX_L01\DirectorNaveNodriza.cpp">
       <Filter>Source\GALAGA__USFX_L01</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\GALAGA__USFX_L01\EnemyShip.h">
-      <Filter>Source\GALAGA__USFX_L01</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\GALAGA__USFX_L01\EnemyShipBuilder.cpp">
-      <Filter>Source\GALAGA__USFX_L01</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\GALAGA__USFX_L01\EnemyShipBuilder.h">
+    <ClInclude Include="..\..\Source\GALAGA__USFX_L01\DirectorNaveNodriza.h">
       <Filter>Source\GALAGA__USFX_L01</Filter>
     </ClInclude>
     <None Include="..\..\Source\GALAGA__USFX_L01\GALAGA__USFX_L01.Build.cs">
@@ -80,16 +74,40 @@
     <ClInclude Include="..\..\Source\GALAGA__USFX_L01\GALAGA__USFX_L01Projectile.h">
       <Filter>Source\GALAGA__USFX_L01</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\GALAGA__USFX_L01\InfernoNodriza.cpp">
+      <Filter>Source\GALAGA__USFX_L01</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GALAGA__USFX_L01\InfernoNodriza.h">
+      <Filter>Source\GALAGA__USFX_L01</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GALAGA__USFX_L01\InterfaceBuilderNodriza.cpp">
+      <Filter>Source\GALAGA__USFX_L01</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GALAGA__USFX_L01\InterfaceBuilderNodriza.h">
+      <Filter>Source\GALAGA__USFX_L01</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GALAGA__USFX_L01\MyActorApariencia.cpp">
+      <Filter>Source\GALAGA__USFX_L01</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GALAGA__USFX_L01\MyActorApariencia.h">
+      <Filter>Source\GALAGA__USFX_L01</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GALAGA__USFX_L01\MyActorArmas.cpp">
+      <Filter>Source\GALAGA__USFX_L01</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GALAGA__USFX_L01\MyActorArmas.h">
+      <Filter>Source\GALAGA__USFX_L01</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\GALAGA__USFX_L01\MyActorComponentMovimiento.cpp">
       <Filter>Source\GALAGA__USFX_L01</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\GALAGA__USFX_L01\MyActorComponentMovimiento.h">
       <Filter>Source\GALAGA__USFX_L01</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\GALAGA__USFX_L01\MyInterfaceBuilder.cpp">
+    <ClCompile Include="..\..\Source\GALAGA__USFX_L01\MyActorProteccion.cpp">
       <Filter>Source\GALAGA__USFX_L01</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\GALAGA__USFX_L01\MyInterfaceBuilder.h">
+    <ClInclude Include="..\..\Source\GALAGA__USFX_L01\MyActorProteccion.h">
       <Filter>Source\GALAGA__USFX_L01</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\GALAGA__USFX_L01\MySceneComponentBarrera.cpp">
@@ -192,6 +210,12 @@
       <Filter>Source\GALAGA__USFX_L01</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\GALAGA__USFX_L01\NaveEnemigaTransporteG2.h">
+      <Filter>Source\GALAGA__USFX_L01</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GALAGA__USFX_L01\NodrizaActorBuilder.cpp">
+      <Filter>Source\GALAGA__USFX_L01</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GALAGA__USFX_L01\NodrizaActorBuilder.h">
       <Filter>Source\GALAGA__USFX_L01</Filter>
     </ClInclude>
   </ItemGroup>

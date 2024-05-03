@@ -18,8 +18,9 @@ public:
 
 	UPROPERTY()
 	float Movimiento;
-	float MovimientoIzquierda;
-	float MovimientoDerecha;
+	float movimiento;
+	bool MovimientoIzquierda;
+	bool MovimientoDerecha;
 
 protected:
 	// Called when the game starts

@@ -5,7 +5,8 @@
 
 ANaveEnemigaCazaG1::ANaveEnemigaCazaG1()
 {
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cube.Shape_Cube'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/Meshes/EnemyLevel2.EnemyLevel2'"));
+	SetActorScale3D(FVector(1.0f, 1.0f, 1.0f));
 
 	mallaNaveEnemiga->SetStaticMesh(ShipMesh.Object);
 

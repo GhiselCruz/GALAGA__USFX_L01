@@ -27,6 +27,14 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFra
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Source\GALAGA__USFX_L01\InterfaceBuilderNodriza.h
+C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Source\GALAGA__USFX_L01\NodrizaActorBuilder.h
+C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA__USFX_L01\NodrizaActorBuilder.generated.h
+C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA__USFX_L01\InterfaceBuilderNodriza.generated.h
+C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Source\GALAGA__USFX_L01\DirectorNaveNodriza.h
+C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Source\GALAGA__USFX_L01\InfernoNodriza.h
+C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA__USFX_L01\InfernoNodriza.generated.h
+C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA__USFX_L01\DirectorNaveNodriza.generated.h
 C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA__USFX_L01\GALAGA__USFX_L01GameMode.generated.h
 C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Source\GALAGA__USFX_L01\MySceneComponentBarrera.h
 C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA__USFX_L01\MySceneComponentBarrera.generated.h

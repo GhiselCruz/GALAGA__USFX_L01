@@ -16,7 +16,7 @@ ANaveEnemiga::ANaveEnemiga()
 	mallaNaveEnemiga->SetStaticMesh(ShipMesh.Object);
 	mallaNaveEnemiga->SetupAttachment(RootComponent);
 	RootComponent = mallaNaveEnemiga;
-	velocidad = 500.0f;
+	//velocidad = 500.0f;
 
 }
 

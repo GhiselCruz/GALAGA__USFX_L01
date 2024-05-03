@@ -4,8 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
+#include "InterfaceBuilderNodriza.h"
+#include "DirectorNaveNodriza.h"
 #include "GALAGA__USFX_L01GameMode.generated.h"
-
 class ANaveEnemiga;
 class ANaveEnemigaCaza;
 class ANaveEnemigaCazaG1;
@@ -22,7 +23,6 @@ class ANaveEnemigaReabastecimientoG2;
 class ANaveEnemigaTransporte;
 class ANaveEnemigaTransporteG1;
 class AnaveEnemigaTransporteG2;
-
 
 
 UCLASS(MinimalAPI)
@@ -62,6 +62,8 @@ public:
 
 public:
 	virtual void Tick(float DeltaTime) override;
+private:
+	ADirectorNaveNodriza* director;
 };
 
 
