@@ -31,6 +31,7 @@ public:
 
 	virtual ANodrizaActorBuilder* GetNodrizaActorBuilder();
 
+
 private:
 	ANodrizaActorBuilder* nave2;
 };
