@@ -21,6 +21,7 @@
 #include "InterfaceBuilderNodriza.h"
 #include "NodrizaActorBuilder.h"
 #include "InfernoNodriza.h"
+#include "NemesisNodriza.h"
 
 
 
@@ -100,9 +101,16 @@ void AGALAGA__USFX_L01GameMode::BeginPlay()
 
 
 	//Aplicacion del patron builder
-	director = GetWorld()->SpawnActor<ADirectorNaveNodriza>();
+
+	//InfernoNodriza
+	directorI = GetWorld()->SpawnActor<ADirectorNaveNodriza>();
 	IInterfaceBuilderNodriza* inferno =  GetWorld()->SpawnActor<AInfernoNodriza>();
-	ANodrizaActorBuilder* nodrizaActor = director->SetNodrizaActorBuilder(inferno);
+	ANodrizaActorBuilder* nodrizaActorI = directorI->SetNodrizaActorBuilder(inferno);
+
+	//Nemesis Nodriza
+	directorN = GetWorld()->SpawnActor<ADirectorNaveNodriza>();
+	IInterfaceBuilderNodriza* nemesis = GetWorld()->SpawnActor<ANemesisNodriza>();
+	ANodrizaActorBuilder* nodrizaActorN = directorN->SetNodrizaActorBuilder(nemesis);
 }
 
 

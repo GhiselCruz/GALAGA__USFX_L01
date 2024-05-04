@@ -5,7 +5,7 @@
 
 ANaveEnemigaReabastecimiento::ANaveEnemigaReabastecimiento()
 {
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Sphere.Shape_Sphere'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_WideCapsule.Shape_WideCapsule'"));
 
 	mallaNaveEnemiga->SetStaticMesh(ShipMesh.Object);
 }

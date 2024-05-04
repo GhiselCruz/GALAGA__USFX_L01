@@ -55,3 +55,5 @@ C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Source\GALAGA__USFX_L01\N
 C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA__USFX_L01\NaveEnemigaTransporteG1.generated.h
 C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Source\GALAGA__USFX_L01\NaveEnemigaTransporteG2.h
 C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA__USFX_L01\NaveEnemigaTransporteG2.generated.h
+C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Source\GALAGA__USFX_L01\NemesisNodriza.h
+C:\Users\HP\Documents\Unreal Projects\GALAGA__USFX_L01\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA__USFX_L01\NemesisNodriza.generated.h

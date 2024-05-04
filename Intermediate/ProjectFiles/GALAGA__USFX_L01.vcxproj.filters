@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\GALAGA__USFX_L01.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{8E6822FF-372F-4430-9E8F-B9AE23D45D18}</UniqueIdentifier>
+      <UniqueIdentifier>{0A897548-B018-4C9D-86E7-F101CF402845}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\GALAGA__USFX_L01.Target.cs">
       <Filter>Source</Filter>
@@ -15,7 +15,7 @@
     <None Include="..\..\.gitignore" />
     <None Include="..\..\Source.zip" />
     <Filter Include="Config">
-      <UniqueIdentifier>{A4A819C7-1439-43F0-A9DB-B819CC8773CA}</UniqueIdentifier>
+      <UniqueIdentifier>{7E30C0B9-4421-4103-8120-A87B1388C093}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -33,7 +33,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\GALAGA__USFX_L01">
-      <UniqueIdentifier>{88EA9A55-28FF-4CF2-BA30-67F7ACF7A8EB}</UniqueIdentifier>
+      <UniqueIdentifier>{B8914039-4CF8-4959-8DF2-8FF7EE88E4D8}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\GALAGA__USFX_L01\Barrera.cpp">
       <Filter>Source\GALAGA__USFX_L01</Filter>
@@ -210,6 +210,12 @@
       <Filter>Source\GALAGA__USFX_L01</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\GALAGA__USFX_L01\NaveEnemigaTransporteG2.h">
+      <Filter>Source\GALAGA__USFX_L01</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GALAGA__USFX_L01\NemesisNodriza.cpp">
+      <Filter>Source\GALAGA__USFX_L01</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GALAGA__USFX_L01\NemesisNodriza.h">
       <Filter>Source\GALAGA__USFX_L01</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\GALAGA__USFX_L01\NodrizaActorBuilder.cpp">

@@ -16,9 +16,12 @@ public:
 	AInfernoNodriza();
 
 public:
-	//bool puedeDisparar;  //para constrolar si la nave puede disparar o no
+	//para constrolar si la nave puede disparar o no
+	//bool puedeDisparar; 
+	//float Movimiento;
 
-	//FTimerHandle Temporizadordisparo; // temporizador para los diparos 
+	// temporizador para los diparos
+	//FTimerHandle Temporizadordisparo;  
 
 protected:
 	// Called when the game starts or when spawned

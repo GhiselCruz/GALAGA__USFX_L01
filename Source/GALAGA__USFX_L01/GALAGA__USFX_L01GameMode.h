@@ -63,7 +63,8 @@ public:
 public:
 	virtual void Tick(float DeltaTime) override;
 private:
-	ADirectorNaveNodriza* director;
+	ADirectorNaveNodriza* directorI;
+	ADirectorNaveNodriza* directorN;
 };
 
 
